@@ -6,9 +6,8 @@ const CATS = {
 };
 const TYPE = {game:'لعبة',app:'تطبيق',program:'برنامج',site:'موقع',ai:'أداة',tool:'أداة'};
 
-// مصفوفة العناصر (تحتوي على كاب كات، بيكس آرت، وماينكرافت)
 const DATA = [
-  {id:'picsart-premium',name:'PicsArt Premium',cat:'app',url:'https://www.mediafire.com/file/llhw1dpz8dfixaz/picsart_premium.apk/file',desc:'تحميل تطبيق بيكس آرت بريمير PicsArt Premium APK لتعديل وصور وتصميم الجرافيك.',added:'2026-10-29',isNew:1,pop:1},
+  {id:'picsart-premium',name:'PicsArt Premium',cat:'app',url:'https://www.mediafire.com/file/llhw1dpz8dfixaz/picsart_premium.apk/file',desc:'تحميل تطبيق بيكس آرت بريمير PicsArt Premium APK لتعديل الصور وتصميم الجرافيك.',added:'2026-10-29',isNew:1,pop:1},
   {id:'capcut-pro',name:'CapCut Pro',cat:'app',url:'https://www.mediafire.com/file/vkmq0koyokxf8le/CapCut_Pro.apk/file',desc:'تحميل تطبيق كاب كات برو CapCut Pro APK للمونتاج وتعديل الفيديو.',added:'2026-10-29',isNew:1,pop:1},
   {id:'minecraft-apk',name:'Minecraft 1.26.70.22',cat:'game',url:'https://www.mediafire.com/file/0wj2i0q3cknkuka/minecraft-26-70-22.apk/file',desc:'تحميل لعبة ماينكرافت إصدار 1.26.70.22 APK.',added:'2026-10-29',isNew:1,pop:1}
 ];
