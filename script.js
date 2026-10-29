@@ -5,7 +5,8 @@ const CATS = {
   ai:{n:'الذكاء الاصطناعي',c:'#ec4899'}, tool:{n:'الأدوات',c:'#84cc16'}
 };
 const TYPE = {game:'لعبة',app:'تطبيق',program:'برنامج',site:'موقع',ai:'أداة',tool:'أداة'};
-// added: تاريخ الإضافة للترتيب، isNew: شارة «جديد»، pop: ضمن المختارات
+
+// مصفوفة العناصر (تحتوي على كاب كات وماينكرافت فقط)
 const DATA = [
   {id:'capcut-pro',name:'CapCut Pro',cat:'app',url:'https://www.mediafire.com/file/vkmq0koyokxf8le/CapCut_Pro.apk/file',desc:'تحميل تطبيق كاب كات برو CapCut Pro APK للمونتاج وتعديل الفيديو.',added:'2026-10-29',isNew:1,pop:1},
   {id:'minecraft-apk',name:'Minecraft 1.26.70.22',cat:'game',url:'https://www.mediafire.com/file/0wj2i0q3cknkuka/minecraft-26-70-22.apk/file',desc:'تحميل لعبة ماينكرافت إصدار 1.26.70.22 APK.',added:'2026-10-29',isNew:1,pop:1}
@@ -63,7 +64,7 @@ document.addEventListener('click',e=>{
   const fav=e.target.closest('.fav');
   if(fav){ const id=fav.dataset.id; state.favs.has(id)?(state.favs.delete(id),toast('أُزيل من المفضلة')):(state.favs.add(id),toast('أُضيف إلى المفضلة')); store.set('rabtek:favs',[...state.favs]); render(); return; }
   const cat=e.target.closest('.cat'); if(cat){ setCat(cat.dataset.k); $('#all').scrollIntoView(); return; }
-  const chip=e.target.closest('.chip'); if(chip){ setCat(chip.dataset.k); return; }
+  const chip=e.target.closest(.chip); if(chip){ setCat(chip.dataset.k); return; }
   const nav=e.target.closest('#menu a'); if(nav){ if(nav.dataset.cat) setCat(nav.dataset.cat); closeMenu(); }
 });
 $('#q').addEventListener('input',e=>{ state.q=e.target.value; render(); });
