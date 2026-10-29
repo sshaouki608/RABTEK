@@ -7,6 +7,7 @@ const CATS = {
 const TYPE = {game:'لعبة',app:'تطبيق',program:'برنامج',site:'موقع',ai:'أداة',tool:'أداة'};
 // added: تاريخ الإضافة للترتيب، isNew: شارة «جديد»، pop: ضمن المختارات
 const DATA = [
+  {id:'minecraft-apk',name:'Minecraft 1.26.70.22',cat:'game',url:'https://www.mediafire.com/file/0wj2i0q3cknkuka/minecraft-26-70-22.apk/file',desc:'تحميل لعبة ماينكرافت إصدار 1.26.70.22 APK.',added:'2026-10-29',isNew:1,pop:1},
   {id:'steam',name:'Steam',cat:'game',url:'https://store.steampowered.com',desc:'متجر ألعاب الحاسوب الرسمي من Valve.',added:'2026-10-20',isNew:1,pop:1},
   {id:'epic',name:'Epic Games Store',cat:'game',url:'https://store.epicgames.com',desc:'متجر ألعاب يقدّم عناوين مجانية بشكل دوري.',added:'2026-10-18',pop:1},
   {id:'itch',name:'itch.io',cat:'game',url:'https://itch.io',desc:'منصة لألعاب المطورين المستقلين.',added:'2026-10-05'},
@@ -43,7 +44,7 @@ function card(r){
     <div class="head"><div class="ico" aria-hidden="true">${esc(r.name[0])}</div><h3>${esc(r.name)}</h3></div>
     <div class="meta"><span class="tag">${c.n}</span><span class="tag">${TYPE[r.cat]}</span>${r.isNew?'<span class="tag new">جديد</span>':''}</div>
     <p>${esc(r.desc)}</p>
-    <div class="act"><a class="btn" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">فتح الموقع الرسمي</a>
+    <div class="act"><a class="btn" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">فتح الرابط / التحميل</a>
     <button class="fav" data-id="${r.id}" aria-pressed="${fav}" aria-label="${fav?'إزالة':'إضافة'} ${esc(r.name)} ${fav?'من':'إلى'} المفضلة">${fav?'♥':'♡'}</button></div></article>`;
 }
 
