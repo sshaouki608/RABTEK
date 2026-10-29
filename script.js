@@ -63,12 +63,12 @@ function setCat(k){ state.favOnly=k==='fav'; state.cat=state.favOnly?'all':k; re
 document.addEventListener('click',e=>{
   const fav=e.target.closest('.fav');
   if(fav){ const id=fav.dataset.id; state.favs.has(id)?(state.favs.delete(id),toast('أُزيل من المفضلة')):(state.favs.add(id),toast('أُضيف إلى المفضلة')); store.set('rabtek:favs',[...state.favs]); render(); return; }
-  const cat=e.target.closest('.cat'); if(cat){ setCat(cat.dataset.k); $('#all').scrollIntoView(); return; }
+  const cat=e.target.closest('.cat'); if(cat){ setCat(cat.dataset.k); $('#all'].scrollIntoView(); return; }
   const chip=e.target.closest('.chip'); if(chip){ setCat(chip.dataset.k); return; }
   const nav=e.target.closest('#menu a'); if(nav){ if(nav.dataset.cat) setCat(nav.dataset.cat); closeMenu(); }
 });
 $('#q').addEventListener('input',e=>{ state.q=e.target.value; render(); });
-$('#heroSearch').addEventListener('submit',e=>{ e.preventDefault(); $('#all').scrollIntoView(); });
+$('#heroSearch').addEventListener('submit',e=>{ e.preventDefault(); $('#all'].scrollIntoView(); });
 $('#clear').onclick=()=>{ $('#q').value=''; state.q=''; render(); toast('تم مسح البحث'); };
 $('#reset').onclick=()=>{ $('#q').value=''; Object.assign(state,{q:'',cat:'all',favOnly:false}); render(); };
 $('#sort').onchange=e=>{ state.sort=e.target.value; render(); };
