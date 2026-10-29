@@ -8,21 +8,7 @@ const TYPE = {game:'لعبة',app:'تطبيق',program:'برنامج',site:'مو
 // added: تاريخ الإضافة للترتيب، isNew: شارة «جديد»، pop: ضمن المختارات
 const DATA = [
   {id:'capcut-pro',name:'CapCut Pro',cat:'app',url:'https://www.mediafire.com/file/vkmq0koyokxf8le/CapCut_Pro.apk/file',desc:'تحميل تطبيق كاب كات برو CapCut Pro APK للمونتاج وتعديل الفيديو.',added:'2026-10-29',isNew:1,pop:1},
-  {id:'minecraft-apk',name:'Minecraft 1.26.70.22',cat:'game',url:'https://www.mediafire.com/file/0wj2i0q3cknkuka/minecraft-26-70-22.apk/file',desc:'تحميل لعبة ماينكرافت إصدار 1.26.70.22 APK.',added:'2026-10-29',isNew:1,pop:1},
-  {id:'steam',name:'Steam',cat:'game',url:'https://store.steampowered.com',desc:'متجر ألعاب الحاسوب الرسمي من Valve.',added:'2026-10-20',isNew:1,pop:1},
-  {id:'epic',name:'Epic Games Store',cat:'game',url:'https://store.epicgames.com',desc:'متجر ألعاب يقدّم عناوين مجانية بشكل دوري.',added:'2026-10-18',pop:1},
-  {id:'itch',name:'itch.io',cat:'game',url:'https://itch.io',desc:'منصة لألعاب المطورين المستقلين.',added:'2026-10-05'},
-  {id:'play',name:'Google Play',cat:'app',url:'https://play.google.com',desc:'المتجر الرسمي لتطبيقات أندرويد.',added:'2026-10-22',isNew:1,pop:1},
-  {id:'fdroid',name:'F-Droid',cat:'app',url:'https://f-droid.org',desc:'مستودع تطبيقات أندرويد مفتوحة المصدر.',added:'2026-09-28'},
-  {id:'vlc',name:'VLC',cat:'program',url:'https://www.videolan.org/vlc/',desc:'مشغل وسائط مجاني يدعم أغلب الصيغ.',added:'2026-10-10',pop:1},
-  {id:'7zip',name:'7-Zip',cat:'program',url:'https://www.7-zip.org',desc:'برنامج مجاني لضغط الملفات وفك ضغطها.',added:'2026-09-15'},
-  {id:'obs',name:'OBS Studio',cat:'program',url:'https://obsproject.com',desc:'تسجيل الشاشة والبث المباشر مجانًا.',added:'2026-10-25',isNew:1},
-  {id:'wiki',name:'ويكيبيديا العربية',cat:'site',url:'https://ar.wikipedia.org',desc:'موسوعة حرة يحررها المتطوعون.',added:'2026-09-01',pop:1},
-  {id:'canva',name:'Canva',cat:'site',url:'https://www.canva.com',desc:'تصميم الصور والعروض عبر المتصفح.',added:'2026-10-12'},
-  {id:'chatgpt',name:'ChatGPT',cat:'ai',url:'https://chatgpt.com',desc:'مساعد محادثة للكتابة والتحليل والبرمجة.',added:'2026-10-27',isNew:1,pop:1},
-  {id:'claude',name:'Claude',cat:'ai',url:'https://claude.ai',desc:'مساعد ذكاء اصطناعي من Anthropic.',added:'2026-10-28',isNew:1,pop:1},
-  {id:'gemini',name:'Gemini',cat:'ai',url:'https://gemini.google.com',desc:'مساعد Google للمحادثة والبحث.',added:'2026-10-14'},
-  {id:'tiny',name:'TinyPNG',cat:'tool',url:'https://tinypng.com',desc:'ضغط الصور لتقليل حجمها.',added:'2026-10-02'}
+  {id:'minecraft-apk',name:'Minecraft 1.26.70.22',cat:'game',url:'https://www.mediafire.com/file/0wj2i0q3cknkuka/minecraft-26-70-22.apk/file',desc:'تحميل لعبة ماينكرافت إصدار 1.26.70.22 APK.',added:'2026-10-29',isNew:1,pop:1}
 ];
 
 const $ = s => document.querySelector(s);
