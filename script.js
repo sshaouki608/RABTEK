@@ -6,9 +6,10 @@ const CATS = {
 };
 const TYPE = {game:'لعبة',app:'تطبيق',program:'برنامج',site:'موقع',ai:'أداة',tool:'أداة'};
 
-// مصفوفة البيانات
+// مصفوفة البيانات محدثة (CapCut Pro + Minecraft)
 const DATA = [
-  {id:'capcut-pro',name:'CapCut Pro',cat:'app',url:'https://www.mediafire.com/file/vkmq0koyokxf8le/CapCut_Pro.apk/file',desc:'تحميل تطبيق كاب كات برو CapCut Pro APK للمونتاج وتعديل الفيديو.',added:'2026-10-29',isNew:1,pop:1}
+  {id:'capcut-pro',name:'CapCut Pro',cat:'app',url:'https://www.mediafire.com/file/vkmq0koyokxf8le/CapCut_Pro.apk/file',desc:'تحميل تطبيق كاب كات برو CapCut Pro APK للمونتاج وتعديل الفيديو.',added:'2026-10-29',isNew:1,pop:1},
+  {id:'minecraft',name:'Minecraft',cat:'game',url:'https://www.mediafire.com/file/0wj2i0q3cknkuka/minecraft-26-70-22.apk/file',desc:'تحميل لعبة ماينكرافت Minecraft APK.',added:'2026-10-30',isNew:1,pop:1}
 ];
 
 const $ = s => document.querySelector(s);
